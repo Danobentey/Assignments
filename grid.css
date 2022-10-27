@@ -1,0 +1,45 @@
+/* Mobile view */
+body {
+  margin: 0;
+  width: 100vw;
+  text-align: center;
+  background: url('./images/bg-intro-mobile.png') no-repeat hsl(231, 21%, 13%);
+
+}
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, minmax(20vh, auto));
+  grid-gap: 10px;
+  width: 850px;
+  margin: 20vh auto;
+}
+
+.Red {
+  background-color: hsl(14, 84%, 52%);
+  grid-column: 1/4;
+  grid-row: 1/3;
+}
+.Yellow {
+  grid-row: 1/3;
+  grid-column: 4/5;
+  background-color: #FFA401;
+  grid-area: 'blue';
+
+}
+.Green {
+  background-color: hsl(142, 94%, 31%);
+  grid-column:1/3;
+  grid-row: 3/5;
+
+}
+.Blue-1 {
+  background-color: hsl(199, 99%, 50%);
+  grid-column: 3/5;
+  grid-row: 3/4;
+}
+.Blue-2 {
+  grid-column: 3/5;
+  grid-row: 4/5;
+  background-color: hsl(199, 99%, 50%);
+}
